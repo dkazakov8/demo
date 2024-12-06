@@ -9,8 +9,6 @@ import { createGlobals } from 'compSystem/createGlobals';
 import { initAutorun } from 'autorun';
 import { isomorphPolyfills } from 'utils';
 import { routes } from 'routes';
-import StoreUi from "stores/ui";
-import {createContext} from "react";
 
 isomorphPolyfills();
 

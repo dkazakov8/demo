@@ -7,6 +7,12 @@ export class StoreInstall {
   }
 
   data = 1;
+
+  products = [
+    {
+      name: '',
+    },
+  ];
 }
 
-export const StoreInstallContext = createContext<StoreInstall | null>(null);
+export const StoreInstallContext = createContext<StoreInstall>(null as any);

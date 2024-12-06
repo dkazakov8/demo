@@ -1,6 +1,5 @@
 import { createContext } from 'react';
 import { addState } from 'dk-mobx-stateful-fn';
-import { runInAction } from 'mobx';
 
 type TypeRequest = {
   someParam: string;
@@ -27,19 +26,13 @@ const getData: {
 };
 
 export const api = {
-  getData: addState((storeInstall: { data: number }, requestParams: TypeRequest) => {
+  getData: addState((requestParams: TypeRequest) => {
     const apiConfig = getData;
 
     return fetch(apiConfig.url, {
       method: apiConfig.method,
       // body: JSON.stringify(requestParams),
-    })
-      .then((response) => response.json() as Promise<(typeof apiConfig)['response']>)
-      .then((response) => {
-        runInAction(() => {
-          storeInstall.data = response.data;
-        });
-      });
+    }).then((response) => response.json() as Promise<(typeof apiConfig)['response']>);
   }, 'getData'),
 };
 
