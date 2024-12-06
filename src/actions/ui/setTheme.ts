@@ -1,6 +1,6 @@
 import { runInAction } from 'mobx';
 
-import { themes } from 'const';
+import { themes } from 'themes';
 import { TypeAction } from 'models';
 import { setThemeToHTML } from 'utils';
 

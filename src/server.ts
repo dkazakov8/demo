@@ -36,7 +36,7 @@ const helmetOptions = {
       ],
       fontSrc: [self, `data:`],
       objectSrc: [self],
-      connectSrc: [self, `ws: https://*.sentry.io`, 'ws:', 'wss:'],
+      connectSrc: [self, `ws: https://*.sentry.io`, 'ws:', 'wss:', 'https://mocki.io'],
       imgSrc: [self, `data:`, `blob:`],
       frameSrc: [self],
       mediaSrc: [self],

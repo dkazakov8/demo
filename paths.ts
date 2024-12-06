@@ -17,5 +17,5 @@ export const paths = {
   global: path.resolve(source, 'styles/global.scss'),
   actions: path.resolve(source, 'actions'),
   nodeModules: path.resolve(root, 'node_modules'),
-  themesObject: path.resolve(source, 'const/themes.tsx'),
+  themesObject: path.resolve(source, 'themes.tsx'),
 };

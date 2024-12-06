@@ -109,10 +109,6 @@ export const generatorConfigs: TypeGenerateFilesParams['configs'] = [
           `\nexport const ${folderName} = { ${fileNamesNoExt.join(', ')} }\n`,
       },
       {
-        folder: path.resolve(paths.source, 'const'),
-        ...defaultReexportConfig,
-      },
-      {
         folder: path.resolve(paths.source, 'stores'),
         ...defaultReexportConfig,
         importTemplate: ({ fileNameNoExt }) =>

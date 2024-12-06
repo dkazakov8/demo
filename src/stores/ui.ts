@@ -2,7 +2,7 @@ import { TypeTranslations } from 'dk-localize';
 import { TypeThemes } from 'dk-file-generator/dist/src/plugins/theme/types';
 
 import { classToObservableAuto } from 'compSystem/transformers';
-import { themes } from 'const';
+import { themes } from 'themes';
 import { getTypedKeys } from 'utils';
 import { TypeLanguage, TypeMetaData } from 'models';
 

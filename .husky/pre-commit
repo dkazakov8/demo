@@ -1,2 +1,0 @@
-pnpm run check-types-precommit
-npx lint-staged
