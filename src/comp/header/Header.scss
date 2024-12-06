@@ -1,0 +1,29 @@
+@import "mixins.scss";
+
+.header {
+  background-color: var(--background-primary);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  .container {
+    max-width: 1440px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    height: 72px;
+    flex-shrink: 0;
+  }
+}
+
+.logo {
+  padding-left: 24px;
+  font-weight: 500;
+}
+
+.githubButton {
+  margin-left: auto;
+  flex-shrink: 0;
+}

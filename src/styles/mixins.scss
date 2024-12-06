@@ -1,0 +1,40 @@
+@mixin inline-top {
+  display: inline-block;
+  vertical-align: top;
+}
+
+@mixin link {
+  color: var(--blue-base);
+  transition: color 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--blue-hover);
+  }
+}
+
+@mixin tableView {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  padding: 30px;
+}
+
+/* Text styles */
+
+@mixin body16Regular {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+@mixin body18Regular {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@mixin body18Bold {
+  @include body18Regular;
+  font-weight: 600;
+}
